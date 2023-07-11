@@ -470,10 +470,9 @@ a:active{
 /* Cible n'importe quel élément <a> lorsque  */
 /* celui-ci est survolé */
 .nav .nav-link:hover {
-    color: var(--nav-item-link-hover);
+    color: var(--nav-item-link-hover); /* Définit la couleur de premier plan lors du survol */
 
     }
-
 
 
 :root {
