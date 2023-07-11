@@ -468,14 +468,15 @@ nav .nav-link {
     padding-bottom: 0.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    ;
+
 }
 
 /* Cible n'importe quel élément <a> lorsque  */
 /* celui-ci est survolé */
 .nav .nav-link:hover {
-    --nav-item-link-hover: color-primary;
-}
+    color: var(--nav-item-link-hover);
+
+    }
 
 
 
@@ -524,7 +525,7 @@ nav .nav-link {
     --nav-item-font-family: var(--font-family-title); /* Famille de police du lien de navigation */
     --nav-item-font-weight: var(--font-weight-bold); /* Poids de la police du lien de navigation */
     --nav-item-font-size: var(--font-size-medium); /* Taille de police du lien de navigation */
-    --nav-item-letter-spacing: 0.04rem; /* Espacement des lettres du lien de navigation */
+    --nav-item-letter-spacing: 4%; /* Espacement des lettres du lien de navigation */
     --nav-item-display: inline-block; /* Affichage du lien de navigation en tant que bloc en ligne */
     --nav-item-margin: 0 0 3rem 0; /* Marges du lien de navigation */
 
