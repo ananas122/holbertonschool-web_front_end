@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
     }
 body, a {
-    color: var(--text-color);
+    color: var();
     }
     .visually-hidden {
     display: none;
