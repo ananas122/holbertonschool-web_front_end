@@ -521,7 +521,7 @@ a:active{
     --nav-item-font-family: var(--font-family-title); /* Famille de police du lien de navigation */
     --nav-item-font-weight: var(--font-weight-bold); /* Poids de la police du lien de navigation */
     --nav-item-font-size: var(--font-size-medium); /* Taille de police du lien de navigation */
-    --nav-item-letter-spacing: 4%; /* Espacement des lettres du lien de navigation */
+    --nav-item-letter-spacing: 0.04rem; /* Espacement des lettres du lien de navigation */
     --nav-item-display: inline-block; /* Affichage du lien de navigation en tant que bloc en ligne */
     --nav-item-margin: 0 0 3rem 0; /* Marges du lien de navigation */
 
