@@ -159,7 +159,7 @@ ul.row {
     color: var(--text-color);
 }
 
-.row ::after {
+.row::after {
     content: none;
     display: table;
     float: 0;
