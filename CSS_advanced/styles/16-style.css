@@ -417,7 +417,8 @@ a:active{
 
 .container {
     width: 960px;
-    margin: left, right;
+    margin-left: auto;
+    margin-left: auto;
 }
 
 :root {
