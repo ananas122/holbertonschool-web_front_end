@@ -448,6 +448,11 @@ a:active{
     padding: var(--footer-padding);
 }
 
+    .ul .footer {
+    text-align: right;
+    }
+
+
 .navbar-menu {
     float: right;
 }
