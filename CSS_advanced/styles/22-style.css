@@ -168,9 +168,10 @@ ul.row {
     clear: both; /* Annule les éléments flottants des deux côtés */
 }
 
+/* Applique un thème sombre aux éléments avec l'attribut data-section-theme="dark" */
 [data-section-theme="dark"] {
-    --text-color: #ffffff;
-    --section-title-color: #ffffff;
+    --text-color: var(--color-white);
+    --section-title-color: var(--color-white);
     background: var(--color-black);
 }
 
