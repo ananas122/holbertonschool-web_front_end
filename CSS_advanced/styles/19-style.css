@@ -448,7 +448,8 @@ a:active{
     padding: var(--footer-padding);
 }
 
-    .ul .footer {
+/* Pour tous les éléments ul dans la classe "footer" */
+    .footer ul {
     text-align: right;
     }
 
