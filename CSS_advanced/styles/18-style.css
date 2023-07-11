@@ -468,10 +468,19 @@ nav .nav-link {
     padding-bottom: 0.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
+    ;
+}
+
+/* Cible n'importe quel élément <a> lorsque  */
+/* celui-ci est survolé */
+.nav .nav-link:hover {
+    --nav-item-link-hover: var(--color-primary);
 }
 
 
+
 :root {
+
     --color-primary: #d73953;
     --color-black: #090909;
     --color-white: #ffffff;
@@ -480,26 +489,44 @@ nav .nav-link {
     --text-color: var(--color-black);
     --font-family-base: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
     --font-family-title: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
-    --font-size-small: 1.2rem;
-    --font-size-medium: 1.6rem;
-    --font-size-large: 1.8rem;
-    --font-size-x-large: 2.3rem;
-    --font-size-xx-large: 4.8rem;
-    --font-weight-regular: 400;
-    --font-weight-bold: 700;
-    --line-height-small: 1.2;
-    --line-height-base: 1.5;
-    --line-height-big: 1.8;
-    --section-header-align: center;
-    --section-tagline-transform: uppercase;
-    --section-title-margin: 0;
-    --section-title-color: var(--color-black);
-    --section-padding: 5rem 0;
-    --section-header-padding: 0 0 3rem;
-    --section-body-padding: 0 0 3rem;
-    --section-footer-padding: 3rem 0 0;
-    --section-footer-align: center;
-    --footer-padding: 5rem 0 1rem;
+
+    /* Définition des variables de taille de police */
+    --font-size-small: 1.2rem; /* Taille de police pour les éléments de petite taille */
+    --font-size-medium: 1.6rem; /* Taille de police pour les éléments de taille moyenne */
+    --font-size-large: 1.8rem; /* Taille de police pour les éléments de grande taille */
+    --font-size-x-large: 2.3rem; /* Taille de police pour les éléments très grands */
+    --font-size-xx-large: 4.8rem; /* Taille de police pour les éléments extrêmement grands */
+
+    /* Définition des variables de poids de police */
+    --font-weight-regular: 400; /* Poids de police régulier */
+    --font-weight-bold: 700; /* Poids de police gras */
+
+    /* Définition des variables de hauteur de ligne */
+    --line-height-small: 1.2; /* Hauteur de ligne pour les éléments de petite taille */
+    --line-height-base: 1.5; /* Hauteur de ligne de base */
+    --line-height-big: 1.8; /* Hauteur de ligne pour les éléments de grande taille */
+
+    /* Définition des variables pour les sections */
+    --section-header-align: center; /* Alignement du titre de section au centre */
+    --section-tagline-transform: uppercase; /* Transformation en majuscules pour la balise de sous-titre de section */
+    --section-title-margin: 0; /* Marge du titre de section */
+    --section-title-color: var(--color-black); /* Couleur du titre de section */
+    --section-padding: 5rem 0; /* Marge interne pour la section */
+    --section-header-padding: 0 0 3rem; /* Marge interne pour l'en-tête de section */
+    --section-body-padding: 0 0 3rem; /* Marge interne pour le contenu de la section */
+    --section-footer-padding: 3rem 0 0; /* Marge interne pour le pied de page de la section */
+    --section-footer-align: center; /* Alignement du pied de page de la section au centre */
+
+    /* Définition des variables pour le pied de page */
+    --footer-padding: 5rem 0 1rem; /* Marge interne pour le pied de page */
+
+    /* Variables pour le lien de navigation */
+    --nav-item-font-family: var(--font-family-title); /* Famille de police du lien de navigation */
+    --nav-item-font-weight: var(--font-weight-bold); /* Poids de la police du lien de navigation */
+    --nav-item-font-size: var(--font-size-medium); /* Taille de police du lien de navigation */
+    --nav-item-letter-spacing: 0.04rem; /* Espacement des lettres du lien de navigation */
+    --nav-item-display: inline-block; /* Affichage du lien de navigation en tant que bloc en ligne */
+    --nav-item-margin: 0 0 3rem 0; /* Marges du lien de navigation */
+
 
 }
-
