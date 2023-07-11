@@ -474,7 +474,7 @@ nav .nav-link {
 /* Cible n'importe quel élément <a> lorsque  */
 /* celui-ci est survolé */
 .nav .nav-link:hover {
-    --nav-item-link-hover: var(--color-primary);
+    --nav-item-link-hover: color-primary;
 }
 
 
