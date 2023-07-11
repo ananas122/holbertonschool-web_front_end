@@ -524,6 +524,6 @@ a:active{
     --nav-item-letter-spacing: 0.04rem; /* Espacement des lettres du lien de navigation */
     --nav-item-display: inline-block; /* Affichage du lien de navigation en tant que bloc en ligne */
     --nav-item-margin: 0 0 3rem 0; /* Marges du lien de navigation */
-
+    --nav-item-link-hover: var(--color-primary) /* Couleur de lien au survol du curseur */
 
 }
