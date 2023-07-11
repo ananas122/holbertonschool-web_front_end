@@ -159,10 +159,11 @@ ul.row {
     color: var(--text-color);
 }
 
+
 .row::after {
-    content: none;
-    display: table;
-    float: 0;
+    content: ""; /* Contenu vide pour créer le pseudo-élément */
+    display: table; /* Affichage en tant que table pour créer une nouvelle ligne */
+    clear: both; /* Annule les éléments flottants des deux côtés */
 }
 
 :root {
