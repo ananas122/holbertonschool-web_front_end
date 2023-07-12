@@ -265,24 +265,16 @@ ul.row {
     z-index: -1;
 }
 
-.card-work:hover .card-image{
+.card-work:hover .card-image {
     transform: scale(1.2);
     transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
-.card-work:hover .card-outer{
+.card-work:hover .card-outer {
     transform: scale(0.95);
 }
 
-.card-testimonial .card-quote::before{
-    content: "\201C";
-    position: absolute;
-    top:-4.5rem;
-    left: -1rem;
-    color: #efeded;
-    font-size: 10rem;
-    z-index: -1;
-}
+
 .card-work .card-outer {
     position: relative;
     overflow: hidden;
