@@ -225,13 +225,13 @@ ul.row {
 
 .card-testimonial .card-avatar {
     border-radius: 50%;
-    width: 10rem;
-    height: 10rem;
+    width: 10em;
+    height: 10em;
 }
 
 .card-testimonial .card-avatar cite {
     display: block;
-    padding-top: 1rem;
+    padding-top: 1em;
     color: var(--color-primary);
 }
 
