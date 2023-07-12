@@ -431,6 +431,7 @@ ul.row {
     --header-logo-link-left: 0;
 
     /* Transitions*/
+    --transition-duration: .3s;
     --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
 }
 
