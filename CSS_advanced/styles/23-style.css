@@ -170,7 +170,7 @@ ul.row {
     display: block; /* Le style sera rendu en tant qu'élément bloc */
 }
 
-.social-link svg {
+.social-link > svg {
     fill: var(--text-color); /* Remplir la couleur des enfants svg */
     }
 
