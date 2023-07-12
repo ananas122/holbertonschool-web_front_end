@@ -144,7 +144,7 @@ a:active .button{
         padding: 0.5rem 1rem;
     }
 
-.nav .nav link::before {
+.nav .nav-link::before {
     content: "";
     position: absolute;
     top: 0;
@@ -153,12 +153,11 @@ a:active .button{
     width: 0;
     height: 0.2rem;
 }
-
 .nav .nav-item:hover .nav-link::before {
     background-color: var(--color-primary);
     width: 100%;
+}
 
-    }
 
 /* Cible n'importe quel élément <a> lorsque  */
 /* celui-ci est survolé */
@@ -166,8 +165,6 @@ a:active .button{
     color: var(--nav-item-link-hover); /* Définit la couleur de premier plan lors du survol */
 
     }
-
-
 
 
 ul.row {
@@ -195,7 +192,6 @@ ul.row {
     font-size: var(--font-size-small);
     color: var(--text-color);
 }
-
 
 .footer-address {
     color: var(--text-color);
