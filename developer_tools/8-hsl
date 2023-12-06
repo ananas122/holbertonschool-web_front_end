@@ -1,1 +1,8 @@
-hsl(183, 49%, 64%);
+hsl(183, 50 %, 65%);
+
+
+
+# Convert to degrees and percentage #78CDD2;
+   # h = int(h * 360)
+    #s = int(s * 100)
+    #l = int(l * 100)
