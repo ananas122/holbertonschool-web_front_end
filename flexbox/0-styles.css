@@ -184,15 +184,12 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    display: flex; /* Ajout de Flexbox */
-
   }
   
-  /*.row::after {
-    content: '';
-    display: table;
-    clear: both;
-  }*/
+ .row {
+    display: flex;
+  }
+  
   
   [class*='col-'] {
    /* float: left;*/
