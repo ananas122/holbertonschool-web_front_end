@@ -373,7 +373,7 @@
   }
   /* Section Latest news ============================= */
   .section-services .row {
-   flex-wrap: wrap
+   flex-wrap: wrap;
   }
   /* Section SERVICES ============================= */
   .section-latest-news .row {
