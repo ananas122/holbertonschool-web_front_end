@@ -765,7 +765,8 @@ min-width: 20%;
 .post-meta-list {
 flex-direction: column;
 }
-
+/* Post Meta
+    ============================= */
 .post-meta-list strong {
 color: var(--color-primary);
 font-size: var(--font-size-small);
