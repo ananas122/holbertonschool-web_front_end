@@ -333,10 +333,6 @@
     text-align: var(--section-footer-align);
   }
   
-  /* Section ABOUT US */
-  .section-about-us .col- {
-   align-self: center;
-  }
   
   /* Section theming
       ============================= */
@@ -379,6 +375,10 @@
 }
 
    .
+/* Section ABOUT US */
+  .section-about-us [class*='col-'] {
+   align-self: center;
+  }  
   
   /*** 4. CARD ***/
   
