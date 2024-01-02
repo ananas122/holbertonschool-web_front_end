@@ -170,18 +170,23 @@
                         <p>Stay updated with our latest trends</p>
                         <form action="#" method="post">
                             <div class="input-group">
-                                <input class="form-control" type="text" name="email" placeholder="Enter Email Address" id="email">
-                                <div class="input-group-btn"><a class="btn" type="submit">Validate</a></div>
-                                <label class="visually-hidden" for="email"></label>
+                                <label for="email" class="visually-hidden">Email</label>
+                                <input class="form-control" type="email" name="email" id="email" autocomplete="email"
+                                    required aria-required="true">
+                                <div class="input-group-btn">
+                                    <button class="btn" type="submit">Validate</button>
+                                </div>
                             </div>
                         </form>
+
                     </div>
                 </div>
                 <div class="col-2">
                     <div class="footer-widget">
                         <h4>Follow Me</h4>
                         <p>Let us be social</p>
-                        <div><a href="#"><i class="facebook-icon"></i></a><a href="#"><i class="twitter-icon"></i></a>
+                        <div><a href="#"><i class="facebook-icon" aria-label="a">Facebook</i></a>
+                        <a href="#"><i class="twitter-icon" aria-label="Twitter">Twitter</i></a>
                         </div>
                     </div>
                 </div>
