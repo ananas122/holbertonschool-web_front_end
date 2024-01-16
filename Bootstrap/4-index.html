@@ -26,12 +26,12 @@
                 <a class="nav-link active" data-toggle="tab" role="tab" href="#introduction">Introduction</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" data-toggle="tab" role="tab" href="#discovery">Discography</a>
+                <a class="nav-link" data-toggle="tab" role="tab" href="#discography">Discography</a>
             </li>
         </ul>
         <div class="tab-content bg-white p-3">
 
-            <div class="tab-pane fade show active" role="tabpanel" id="introduction">
+            <div class="tab-pane fade show active" id="introduction">
             <!-- Contenu de l'onglet Introduction -->
                 <p>
                     Bob Dylan (born Robert Allen Zimmerman; May 24, 1941) is an American singer-songwriter, author, and
@@ -46,12 +46,12 @@
                 </p>
             </div>
 
-            <div class="tab-pane fade show active" role="tabpanel" id="discography">
+            <div class="tab-pane fade" id="discography" role="tabpanel">
             <!-- Contenu de l'onglet Discography -->
-                <ul class="list-group">
+                <ul class="list-group list-unstyled">
                     <li class="list-group-item">
-                        <a type="button" data-toggle="collapse" data-target="story">Bob Dylan <em>(1962)</em></a>
-                        <div class="collapse" id="story" data-parent="discography">
+                        <a href="#story" type="button" data-toggle="collapse">Bob Dylan <em>(1962)</em></a>
+                        <div class="collapse" id="story">
                             <!-- Contenu pr Bob Dylan -->
                             <p>
                                 Bob Dylan is the debut studio album by American singer-songwriter Bob Dylan, released on
@@ -62,9 +62,9 @@
                         </div>
                     </li>
 
-                    <li class="card">
-                        <a type="button" data-toggle="collapse" data-target="free">The Freewheelin' Bob Dylan <em>(1963)</em></a>
-                        <div class="collapse" data-parent="#discography">
+                    <li class="list-group-item">
+                        <a href="#story2" type="button" data-toggle="collapse">The Freewheelin' Bob Dylan <em>(1963)</em></a>
+                        <div class="collapse" id="story2">
                             <!-- Contenu pour The Freewheelin' Bob Dylan (1963) -->
                             <p>
                                 The Freewheelin' Bob Dylan is the second studio album by American singer-songwriter Bob
@@ -82,8 +82,8 @@
                     </li>
 
                     <li class="list-group-item">
-                        <a type="button" data-toggle="collapse" data-target="time">The Times They Are a-Changin' <em>(1964)</em></a>
-                        <div class="collapse" data-parent="#discography">
+                        <a href="#times" type="button" data-toggle="collapse" data-target="#">The Times They Are a-Changin' <em>(1964)</em></a>
+                        <div class="collapse" id="times">
                         <!-- Contenu pour The Times They Are a-Changin' (1964) -->
                             <p>
                                 The Times They Are a-Changin' is the third studio album by American singer-songwriter
@@ -99,8 +99,8 @@
                     </li>
 
                     <li class="list-group-item">
-                        <a type="button" data-toggle="collapse" data-target="other-infos">Another Side of Bob Dylan <em>(1964)</em></a>
-                        <div class="collapse" id="other-infos" data-parent="#discography">
+                        <a href="#other" type="button" data-toggle="collapse">Another Side of Bob Dylan <em>(1964)</em></a>
+                        <div class="collapse"  data-parent="#other">
                             <!-- Contenu pour Another Side of Bob Dylan (1964) -->
                             <p>
                                 Another Side of Bob Dylan is the fourth studio album by American singer and songwriter
