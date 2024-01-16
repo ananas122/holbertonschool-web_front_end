@@ -1,6 +1,6 @@
 function dividebay(firstNumber) {
     return function(secondNumber) {
-        return secondNumber / firstNumber);
+        return secondNumber / firstNumber;
     }
     
     }
