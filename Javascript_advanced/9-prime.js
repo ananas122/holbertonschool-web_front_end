@@ -3,9 +3,9 @@ function countPrimeNumbers() {
   let count = 0;  // Initialisation du compteur de nombres premiers à 0
   let prime;  // Variable pour déterminer si un nombre est premier ou non
 
-  // Boucle principale: vérifier chaque nombre de 2 à 100
+  // vérifier chaque nombre de 2 à 100
   for (let i = 2; i <= 100; i++) {
-    prime = true;  // On suppose initialement que le nombre est premier
+    prime = true;  
 
     // Vérifier si 'i' peut être divisé par un nombre inférieur à lui-même
     for (let j = 2; j < i; j++) {
@@ -29,7 +29,6 @@ const t0 = performance.now();  // Heure de début
 countPrimeNumbers();  // Exécuter la fonction countPrimeNumbers
 const t1 = performance.now();  // Heure de fin
 
-// Afficher le temps d'exécution dans la console
 console.log(
   `Execution time of printing countPrimeNumbers was ${t1 - t0} milliseconds.`
 );
