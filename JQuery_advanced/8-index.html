@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Pagination</title>
+    <style>
+        .pagination li {
+            cursor: pointer;
+            margin-left: 10px;
+            font-weight: normal;
+            display: inline-block;
+        }
+        .pagination li.active {
+            font-weight: bold;
+        }
+        .pagination {
+            list-style-type: none;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Other HTML elements -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="application/javascript">
+        $(document).ready(function() {
+            function createSearchForm() {
+                // ... your existing code ...
+
+                // Create pagination list
+                let paginationList = $('<ul>').attr('id', 'pagination').addClass('pagination');
+                $('body').append(paginationList);
+            }
+
+            function queryWikipedia(searchQuery, offset = 0) {
+                // ... your existing code ...
+
+                // On success
+                .done(function(response) {
+                    // ... your existing code ...
+
+                    // Calculate number of pages
+                    const totalItems = response.query.searchinfo.totalhits;
+                    const itemsPerPage = 10;
+                    buildPagination(totalItems, itemsPerPage, offset);
+                });
+            }
+
+            function buildPagination(numberOfItems, itemsPerPage, currentOffset) {
+                const totalPages = Math.ceil(numberOfItems / itemsPerPage);
+                const currentPage = currentOffset / itemsPerPage + 1;
+                $('#pagination').empty(); // Reset pagination list
+
+                for (let i = 1; i <= totalPages; i++) {
+                    let pageItem = $('<li>').text(i);
+
+                    // Add active class for current page
+                    if (i === currentPage) {
+                        pageItem.addClass('active');
+                    }
+
+                    // Add click event to each page item
+                    pageItem.on('click', function() {
+                        const newOffset = (i - 1) * itemsPerPage;
+                        queryWikipedia($('#searchInput').val(), newOffset);
+                    });
+
+                    $('#pagination').append(pageItem);
+                }
+            }
+
+            // Initial call to create form
+            createSearchForm();
+        });
+    </script>
+</body>
+</html>
