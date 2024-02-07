@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping Cart</title>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/src/js.cookie.min.js"></script>
+    <script type="text/javascript">
+        // Create an array of available items
+        const availableItems = ['Shampoo', 'Soap', 'Sponge', 'Water'];
+
+        // Check if local storage is available
+        if (typeof (Storage) === 'undefined') {
+            alert('Sorry, your browser does not support Web storage. Try again with a better one.');
+        } else {
+            // Call functions to create store and display cart
+            createStore();
+            displayCart();
+        }
+
+        // Function to add item to cart
+        function addItemToCart(item) {
+            localStorage.setItem(item, true);
+        }
+
+        function createStore() {
+            const ul = document.createElement('ul');
+            // Loop through availableItems to create list items
+            availableItems.forEach(item => {
+                // Create a new list item
+                const li = document.createElement('li');
+                li.textContent = item;
+                // Add event listener to call addItemToCart when the item is clicked
+                li.addEventListener('click', () => addItemToCart(item));
+                ul.appendChild(li);
+            });
+            document.body.appendChild(ul);
+        }
+
+        // Function to display cart
+        function displayCart() {
+                let X = localStorage.length
+                let p = document.createElement("p");
+                p.innerHTML = `You previously had ${X} items in your cart`;
+                document.body.append(p);
+            }
+
+          
+    </script>
+</body>
+
+</html>
